@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import cookie from './Cookies.png';
 
-
 class App extends Component {
-
   constructor(){
       super();
       this.state = {
@@ -24,16 +22,13 @@ class App extends Component {
       let message=(choice[Math.floor(Math.random()*len)])
       alert(message);
     }
-
   }
-
   render() {
     return (
       <div>
         <img onClick={this.click.bind(this)} src={cookie} alt="cookie"/>
         <span value="">{this.state.counter}</span>
       </div>
-     
     )
   }
 };
